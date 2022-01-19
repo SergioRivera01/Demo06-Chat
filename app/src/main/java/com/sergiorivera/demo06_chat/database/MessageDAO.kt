@@ -16,6 +16,9 @@ interface MessageDAO {
     @Insert
     fun createMessage(messageEntity: MessageEntity)
 
+    @Insert
+    fun createMessageS(list: List<MessageEntity>)
+
     @Update
     fun updateMessage(messageEntity: MessageEntity)
 

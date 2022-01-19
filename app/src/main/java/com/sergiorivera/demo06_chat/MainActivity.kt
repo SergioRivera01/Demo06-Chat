@@ -12,7 +12,7 @@ import com.sergiorivera.demo06_chat.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
+       lateinit var db: UtadChatDb
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -20,12 +20,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
-        val db = Room.databaseBuilder(applicationContext, UtadChatDb::class.java, "utad-chat-db")
+        db = Room.databaseBuilder(applicationContext, UtadChatDb::class.java, "utad-chat-db")
             .allowMainThreadQueries()
             .build()
-        db.messageDao().findAll()
 
-        val message = MessageEntity(4, "created", "date", 1)
-        db.messageDao().createMessage(message)
+
+
     }
 }

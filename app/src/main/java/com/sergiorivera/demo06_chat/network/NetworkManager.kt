@@ -12,7 +12,7 @@ object NetworkManager {
         .addInterceptor(loggingInterceptor)
         .build()
     private val retrofit = Retrofit.Builder()
-        .baseUrl("http://10.1.200.35:3000/")
+        .baseUrl("http://10.1.200.72:3000/")
         .client(client)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
