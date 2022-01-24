@@ -6,13 +6,15 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object NetworkManager {
-    private val loggingInterceptor = HttpLoggingInterceptor()
+    private val loggingInterceptor = HttpLoggingInterceptor().apply {
+        level = HttpLoggingInterceptor.Level.BODY
+    }
     //loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
     private val client = OkHttpClient.Builder()
         .addInterceptor(loggingInterceptor)
         .build()
     private val retrofit = Retrofit.Builder()
-        .baseUrl("http://10.1.200.72:3000/")
+        .baseUrl("http://10.1.200.85:3000/")
         .client(client)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
