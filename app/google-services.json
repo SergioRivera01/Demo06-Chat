@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "726836685284",
+    "project_id": "demoutadchat",
+    "storage_bucket": "demoutadchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726836685284:android:6d74f6f5ca55aa0aa5fff1",
+        "android_client_info": {
+          "package_name": "com.sergiorivera.demo06_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726836685284-fa8nvokb5gai5b04g979efpoftvo8320.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe8NsSgDCsW5Xyt6-Z3UBoUiSymoqlnIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726836685284-fa8nvokb5gai5b04g979efpoftvo8320.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
